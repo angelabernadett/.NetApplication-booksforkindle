@@ -95,13 +95,13 @@ namespace seachbookskindle
         public class Epub
         {
             public bool isAvailable { get; set; }
-            public string acsTokenLink { get; set; }
+            public string downloadLink { get; set; }
         }
 
         public class Pdf
         {
             public bool isAvailable { get; set; }
-            public string acsTokenLink { get; set; }
+            public string downloadLink { get; set; }
         }
 
         public class AccessInfo
@@ -156,6 +156,13 @@ namespace seachbookskindle
             {
                 get { return this._Author; }
                 set { this._Author = value; }
+            }
+
+            private string _Link;
+            public string Link
+            {
+                get { return this._Link; }
+                set { this._Link = value; }
             }
 
         private BitmapImage _ImageData;

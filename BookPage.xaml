@@ -8,7 +8,29 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BookPage">
 
-    <Grid OpacityMask="Black" Background="#FFCD1515">
-        
+    <Grid OpacityMask="Black" Background="White">
+        <Button x:Name="backButton" Content="back" HorizontalAlignment="Right" Margin="50,0,0,0" VerticalAlignment="Top" Width="100" Background="#FFF9B204" Foreground="White" FontWeight="Bold" FontSize="14" IsCancel="True" Height="30" Click="backButton_Click"  />
+        <Grid Width="500" >
+           
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.25*" />
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="0.25*" />
+                <RowDefinition Height="0.25*" />
+                <RowDefinition Height="0.25*" />
+            </Grid.RowDefinitions>
+            <Image x:Name="bookImage" Grid.Row ="0" HorizontalAlignment="Center" Margin="20,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="bookTitle" Grid.Row ="1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
+            <TextBlock x:Name="bookAuthor" Grid.Row ="2" FontSize="14" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
+            <TextBlock Grid.Row ="3" Text="DOWNLOAD LINK: " FontWeight="Bold" FontSize="18" VerticalAlignment="Bottom"/>
+            <TextBlock Grid.Row ="4" TextWrapping="Wrap">
+            <Hyperlink x:Name="bookHyperLink"  >
+                <TextBlock x:Name="bookLink" Grid.Row ="4" TextWrapping="Wrap" PreviewMouseLeftButtonDown="bookLink_MouseLeftButtonDown"/>
+            </Hyperlink>
+            </TextBlock>
+
+
+
+        </Grid>
     </Grid>
 </Page>

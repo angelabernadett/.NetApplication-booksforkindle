@@ -31,6 +31,7 @@ namespace seachbookskindle
             Main.Content = searchPage;
         }
 
+
         private void KindleClick(object sender, RoutedEventArgs e)
         {
             KindlePage kindlePage = new KindlePage();

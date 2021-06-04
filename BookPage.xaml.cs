@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +19,32 @@ namespace seachbookskindle
     
     public partial class BookPage : Page
     {
-        public BookPage()
+
+        private SearchPage _page;
+
+        public BookPage(BookData book, SearchPage page)
         {
             InitializeComponent();
+            _page = page;
+
+            this.bookImage.Source = book.ImageData;
+            this.bookTitle.Text = book.Title;
+            this.bookAuthor.Text = book.Author;
+            this.bookLink.Text = book.Link;
+           
+
+
+        }
+
+        private void bookLink_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DownloadPage downloadPage = new DownloadPage(this.bookLink.Text);
+            NavigationService.Navigate(downloadPage);
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(_page);
         }
     }
 }

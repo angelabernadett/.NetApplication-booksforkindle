@@ -50,6 +50,8 @@
                         </StackPanel>
                     </Button>
 
+                    
+
                     <Button x:Name="kindleButton" Height="60" Width="140" BorderBrush="Transparent" Background="#00000000" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Click="KindleClick">
                         <Button.Style>
                             <Style TargetType="{x:Type Button}">
@@ -75,6 +77,8 @@
                             <TextBlock Text="Send to Kindle" Margin="10 0 0 0" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Button>
+
+                    
 
                 </ListView>
             </StackPanel>

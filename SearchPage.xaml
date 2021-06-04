@@ -15,7 +15,7 @@
         </Grid>
         <Grid HorizontalAlignment="Center" Height="387" Margin="10,10,0,0" VerticalAlignment="Center" Width="780">
 
-            <ListView x:Name="BookBox"  HorizontalAlignment="Stretch" BorderBrush="Transparent" Background="Transparent" Foreground="White" FontSize="14" FontWeight="Bold" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <ListView PreviewMouseLeftButtonUp="BookBox_Click" x:Name="BookBox"  HorizontalAlignment="Stretch" BorderBrush="Transparent" Background="Transparent" Foreground="White" FontSize="14" FontWeight="Bold" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <UniformGrid Columns="2" ScrollViewer.CanContentScroll="True" VerticalAlignment="Center" HorizontalAlignment="Center"/>

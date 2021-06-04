@@ -27,13 +27,6 @@ namespace seachbookskindle
 
             List<Item> book_list = books.items;
 
-            /*foreach (var item in book_list)
-            {
-                if (item.volumeInfo.imageLinks != null)
-                {
-                    Console.WriteLine(item.volumeInfo.title + " " + item.volumeInfo.imageLinks.thumbnail);
-                }
-            }*/
 
             return book_list;
 

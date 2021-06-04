@@ -84,6 +84,9 @@
     <Compile Include="BookPage.xaml.cs">
       <DependentUpon>BookPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DownloadPage.xaml.cs">
+      <DependentUpon>DownloadPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="KindlePage.xaml.cs">
       <DependentUpon>KindlePage.xaml</DependentUpon>
     </Compile>
@@ -91,6 +94,10 @@
       <DependentUpon>SearchPage.xaml</DependentUpon>
     </Compile>
     <Page Include="BookPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DownloadPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icons\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\convert.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

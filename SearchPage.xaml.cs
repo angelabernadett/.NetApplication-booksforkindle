@@ -20,7 +20,8 @@ namespace seachbookskindle
     /// Interaction logic for SearchPage.xaml
     /// </summary>
     public partial class SearchPage : Page
-    {
+    { 
+
         public SearchPage()
         {
             InitializeComponent();
@@ -33,23 +34,23 @@ namespace seachbookskindle
 
             foreach (var item in book_list)
             {
-                if (item.volumeInfo.imageLinks != null && item.volumeInfo.authors!=null)
+                if (item.volumeInfo.imageLinks != null && item.volumeInfo.authors!=null && item.accessInfo.pdf.downloadLink!=null)
                 {
-                    bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by "+item.volumeInfo.authors.First(), ImageData = LoadImage(item.volumeInfo.imageLinks.thumbnail) });
+                    bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by "+item.volumeInfo.authors.First(), Link = item.accessInfo.pdf.downloadLink, ImageData = LoadImage(item.volumeInfo.imageLinks.thumbnail) });
                 }
                 else
                 {
-                    if(item.volumeInfo.imageLinks != null && item.volumeInfo.authors == null)
+                    if(item.volumeInfo.imageLinks != null && item.volumeInfo.authors == null && item.accessInfo.pdf.downloadLink != null)
                     {
-                        bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by unknown", ImageData = LoadImage(item.volumeInfo.imageLinks.thumbnail) });
+                        bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by unknown", Link = item.accessInfo.pdf.downloadLink, ImageData = LoadImage(item.volumeInfo.imageLinks.thumbnail) });
                     }
-                    if(item.volumeInfo.authors != null && item.volumeInfo.imageLinks == null)
+                    if(item.volumeInfo.authors != null && item.volumeInfo.imageLinks == null && item.accessInfo.pdf.downloadLink != null)
                     {
-                        bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by " + item.volumeInfo.authors.First(), ImageData = LoadImage("https://www.foisor.ro/images/jpg/Foto-Medici/Image-not-available_1.jpg") });
+                        bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by " + item.volumeInfo.authors.First(), Link = item.accessInfo.pdf.downloadLink, ImageData = LoadImage("https://www.foisor.ro/images/jpg/Foto-Medici/Image-not-available_1.jpg") });
                     }
-                    if (item.volumeInfo.imageLinks == null && item.volumeInfo.authors == null)
+                    if (item.volumeInfo.imageLinks == null && item.volumeInfo.authors == null && item.accessInfo.pdf.downloadLink != null)
                     {
-                        bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by unknown", ImageData = LoadImage("https://www.foisor.ro/images/jpg/Foto-Medici/Image-not-available_1.jpg") });
+                        bookData.Add(new BookData { Title = item.volumeInfo.title, Author = "by unknown", Link = item.accessInfo.pdf.downloadLink, ImageData = LoadImage("https://www.foisor.ro/images/jpg/Foto-Medici/Image-not-available_1.jpg") });
                     }
 
                 }
@@ -74,12 +75,13 @@ namespace seachbookskindle
             DisplayBooks(search);
         }
 
-        private void BookBox_ItemActivate(object sender, EventArgs e)
+        private void BookBox_Click(object sender, MouseButtonEventArgs e)
         {
             var firstSelectedItem = BookBox.SelectedItems[0];
-            BookPage bookPage = new BookPage();
+            BookData book = (BookData)firstSelectedItem;
+            BookPage bookPage = new BookPage(book, this);
             NavigationService.Navigate(bookPage);
-            Console.WriteLine("i was here");
+            Console.WriteLine("hello from, herer: " + book.Link);
         }
     }
 }
