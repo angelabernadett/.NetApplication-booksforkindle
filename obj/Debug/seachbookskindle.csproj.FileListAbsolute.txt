@@ -40,14 +40,5 @@ E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindl
 E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\obj\Debug\BookPage.baml
 E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\obj\Debug\DownloadPage.g.cs
 E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\obj\Debug\DownloadPage.baml
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Aspose.HTML.dll
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Aspose.PDF.dll
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Aspose.HTML.xml
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Aspose.PDF.xml
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Spire.Doc.dll
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Spire.License.dll
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Spire.Pdf.dll
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Microsoft.mshtml.dll
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Spire.Doc.xml
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Spire.License.xml
-E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\bin\Debug\Spire.Pdf.xml
+E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\obj\Debug\MailPage.g.cs
+E:\Faculta\Year 3\Semester 2\Applications Development using .NET\seachbookskindle\obj\Debug\MailPage.baml
