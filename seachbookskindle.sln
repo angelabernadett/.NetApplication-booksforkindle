@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "seachbookskindle", "seachbookskindle.csproj", "{450F41B9-DD76-49AB-BDEC-990E8D4F2964}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{450F41B9-DD76-49AB-BDEC-990E8D4F2964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450F41B9-DD76-49AB-BDEC-990E8D4F2964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450F41B9-DD76-49AB-BDEC-990E8D4F2964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450F41B9-DD76-49AB-BDEC-990E8D4F2964}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFBE10D3-F1A2-4CCE-90FB-3C14AFD8822C}
+	EndGlobalSection
+EndGlobal
