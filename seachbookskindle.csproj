@@ -84,6 +84,7 @@
     <Compile Include="BookPage.xaml.cs">
       <DependentUpon>BookPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="credentials.cs" />
     <Compile Include="DownloadPage.xaml.cs">
       <DependentUpon>DownloadPage.xaml</DependentUpon>
     </Compile>

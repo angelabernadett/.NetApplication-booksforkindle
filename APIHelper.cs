@@ -11,7 +11,7 @@ namespace seachbookskindle
 {
     public static class ApiHelper
     {
-        static string api_key = "AIzaSyAW_ubKWQYmEPVarGCOKxasG8L79l6HBU8"; //i know it's not good practice but e mai la indemana
+        static string api_key = credentials.API_Key;
         public static HttpClient ApiClient { get; set; } 
 
         public static List<Item> GetBooks(string searchWord)
