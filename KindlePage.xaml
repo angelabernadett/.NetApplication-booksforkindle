@@ -11,15 +11,15 @@
     <Grid Background="White">
         <Grid Margin="10,10,10,9.6" HorizontalAlignment="Center" VerticalAlignment="Center" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="430" Width="780">
             <TextBlock Text="Sender: " FontSize="18" Width="100" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Margin="195,9,0,0"/>
-            <TextBox Width="300" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,9,180,395" FontSize="18"/>
+            <TextBox x:Name="sender" Width="300" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,9,180,395" FontSize="18"/>
             <TextBlock Text="Receiver: " FontSize="18" Width="100" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Margin="195,41,0,0"/>
-            <TextBox Width="300" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,40,180,364" FontSize="18"/>
+            <TextBox x:Name="receiver" Width="300" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,40,180,364" FontSize="18"/>
             <TextBlock Text="Subject: " FontSize="18" Width="100" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Margin="195,71,0,0"/>
-            <TextBox Width="300" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,71,180,333" FontSize="18"/>
-            <TextBox Width="405" Height="141" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="195,115,180,174"/>
+            <TextBox x:Name="subject" Width="300" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,71,180,333" FontSize="18"/>
+            <TextBox x:Name="body" Width="405" Height="141" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="195,115,180,174"/>
             <Button Content="SELECT" HorizontalAlignment="Left" Margin="195,273,0,0" VerticalAlignment="Top" Width="95" Background="#FFF9B204" Foreground="White" FontWeight="Bold" FontSize="14" IsCancel="True" Height="26" Click="selectButton_Click"/>
             <TextBox x:Name="filePath" Width="300" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,273,180,131" FontSize="18"/>
-            <Button x:Name="sendButton" Content="SEND" HorizontalAlignment="Center" Margin="288,318,314,9.6" VerticalAlignment="Center" Width="118" Background="#FFF9B204" Foreground="White" FontWeight="Bold" FontSize="22" IsCancel="True" Height="42" />
+            <Button x:Name="sendButton" Content="SEND" HorizontalAlignment="Center" Margin="288,318,314,9.6" VerticalAlignment="Center" Width="118" Background="#FFF9B204" Foreground="White" FontWeight="Bold" FontSize="22" IsCancel="True" Height="42"  Click="sendButton_Click"/>
         </Grid>
 
     </Grid>

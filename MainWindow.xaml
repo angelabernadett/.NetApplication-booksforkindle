@@ -85,5 +85,6 @@
         </Grid>
         <Frame x:Name="Main" Margin="116.8,50,-0.4,0.4" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Grid.Column="1"></Frame>
         <Image x:Name="bookImage" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="264,192,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="intro" Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Height="417" Margin="171.8,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="726" FontSize="14"/>
     </Grid>
 </Window>

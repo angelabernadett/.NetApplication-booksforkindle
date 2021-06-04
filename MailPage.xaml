@@ -1,0 +1,19 @@
+﻿<Page x:Class="seachbookskindle.MailPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:seachbookskindle"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MailPage">
+
+    <Grid Background="White">
+        <TextBox x:Name="mail" HorizontalAlignment="Left" Height="33" Margin="228,131,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="344" FontSize="18"/>
+        <PasswordBox x:Name="password" PasswordChar="*"  HorizontalAlignment="Left" Height="33" Margin="228,197,0,0"  VerticalAlignment="Top" Width="344" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,98,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="110" Height="28" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,169,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="110" Height="28" FontSize="18"/>
+        <Button x:Name="nextButton" Content="NEXT" HorizontalAlignment="Right" Margin="0,297,356,0" VerticalAlignment="Top" Width="100" Background="#FFF9B204" Foreground="White" FontWeight="Bold" FontSize="14" IsCancel="True" Height="30" Click="nextButton_Click" />
+
+    </Grid>
+</Page>

@@ -81,7 +81,7 @@ namespace seachbookskindle
             BookData book = (BookData)firstSelectedItem;
             BookPage bookPage = new BookPage(book, this);
             NavigationService.Navigate(bookPage);
-            Console.WriteLine("hello from, herer: " + book.Link);
+            //Console.WriteLine("hello from, herer: " + book.Link);
         }
     }
 }

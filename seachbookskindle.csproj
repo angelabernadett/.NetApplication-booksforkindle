@@ -90,6 +90,9 @@
     <Compile Include="KindlePage.xaml.cs">
       <DependentUpon>KindlePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MailPage.xaml.cs">
+      <DependentUpon>MailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SearchPage.xaml.cs">
       <DependentUpon>SearchPage.xaml</DependentUpon>
     </Compile>
@@ -102,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="KindlePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
